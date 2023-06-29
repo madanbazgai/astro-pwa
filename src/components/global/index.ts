@@ -1,3 +1,5 @@
 export { Header } from "./Header"
 export { Footer } from "./Footer"
 export { Layout } from "./Layout"
+export { Carousel } from "./Carousel"
+export { Testimonials } from "./Testimonials"

@@ -1,0 +1,11 @@
+---
+const { testImg, stdName, testText } = Astro.props
+---
+
+<div
+	class="flex flex-col items-center gap-2 w-80 shadow-xl rounded-2xl bg-white p-7"
+>
+	<img src={testImg} class="w-32 h-32 rounded-full" alt="" />
+	<p class="font-bold underline">{stdName}</p>
+	<p class="text-sm">{testText}</p>
+</div>

@@ -1,7 +1,21 @@
 ---
-// ComponHeader, ent imports
+import Carousel from "@component/global/Carousel/Carousel.astro"
+import AboutUs from "@component/global/AboutUs/AboutUs.astro"
+import OurPrograms from "@component/global/Our Programs/OurPrograms.astro"
+import Testimonials from "@component/global/Testimonials/Testimonials.astro"
+// import WhyBNKC from "@component/global/WhyBNKC/WhyBNKC.astro"
 import { Layout } from "@globals"
 ---
 
-<Layout title="Astro PWA Starter">
+<Layout title="Home | Budhanilkanth Secondary School">
+	<Carousel/>
+	<AboutUs />
+	<!-- <h1>Message from principle, coordinators</h1> -->
+
+	<OurPrograms />
+	
+	<!-- <WhyBNKC /> -->
+	<!-- <h1>Notice Board</h1> -->
+	<Testimonials/>
+	<h1>Event gallaries</h1>
 </Layout>

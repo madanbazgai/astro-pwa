@@ -1,0 +1,44 @@
+---
+import computerImg from "@img/programs/computer_engineering.avif";
+import civilImg from "@img/programs/civil_engineering.png";
+---
+
+<div class="mt-10 ">
+	<h3 class="text-center text-blue-600 font-bold text-4xl mb-5 uppercase">Programs Offered</h3>
+
+	<div class="programs flex justify-center gap-14">
+		<div class="card w-96  bg-base-100 shadow-xl">
+			<figure>
+				<img
+				class="h-52 w-full object-cover"
+					src={civilImg}
+					alt=""
+				/>
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title uppercase">Civil Engineering</h2>
+				<p>Civil engineering is a branch of engineering that deals with the design, construction, and maintenance of the physical and naturally built environment,....</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-error">Learn More!</button>
+				</div>
+			</div>
+		</div>
+	
+		<div class="card w-96   bg-base-100 shadow-xl">
+			<figure>
+				<img
+				class="h-52 w-full object-cover"
+					src={computerImg}
+					alt=""
+				/>
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title uppercase">Computer Engineering</h2>
+				<p>Computer engineering is a field that combines principles of computer science and electrical engineering to design and develop computer hardware...</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-error">Learn More!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

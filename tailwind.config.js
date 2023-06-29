@@ -1,3 +1,6 @@
+
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./src/**/*.{astro,html,jsx,tsx,svelte,vue,js,ts}"],
@@ -6,7 +9,10 @@ module.exports = {
 			screens: {
 				sm: "400px",
 			},
+			fontFamily:{
+				"montserrat": ['Montserrat', 'sans-serif'],
+			}
 		},
 	},
-	 plugins: [require("daisyui")],
+	plugins: [require("daisyui")],
 };

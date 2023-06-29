@@ -1,0 +1,25 @@
+---
+import TestimonialCard from "@component/TestimonialCard.astro"
+import testImg from "@img/testimonial_img/dummy.jpg"
+---
+
+<div class="flex flex-col px-10 items-center mt-24">
+	<h3 class="uppercase text-4xl text-blue-600 font-bold">Testmonials</h3>
+	<div class="test_cards flex gap-10 ">
+		<TestimonialCard
+			testImg={testImg}
+			stdName="Rohan"
+			testText="Budhanilkantha Technical School is a great place to learn a skills. The teachers are experienced and knowledgeable, and the facilities are state-of-the-art. I would highly recommend Budhanilkantha Technical School to anyone who is looking for a quality education."
+		/>
+		<TestimonialCard
+			testImg={testImg}
+			stdName="Rajesh"
+			testText="Budhanilkantha Technical School is a great place to learn a skills. The teachers are experienced and knowledgeable, and the facilities are state-of-the-art. I would highly recommend Budhanilkantha Technical School to anyone who is looking for a quality education."
+		/>
+		<TestimonialCard
+			testImg={testImg}
+			stdName="Rohit"
+			testText="Budhanilkantha Technical School is a great place to learn a skills. The teachers are experienced and knowledgeable, and the facilities are state-of-the-art. I would highly recommend Budhanilkantha Technical School to anyone who is looking for a quality education."
+		/>
+	</div>
+</div>

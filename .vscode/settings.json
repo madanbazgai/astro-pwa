@@ -7,5 +7,6 @@
 	"editor.formatOnSave": true,
 	"eslint.validate": ["javascript", "astro", "typescript"],
 	"eslint.alwaysShowStatus": true,
-	"eslint.packageManager": "pnpm"
+	"eslint.packageManager": "pnpm",
+	"files.autoSave": "afterDelay"
 }

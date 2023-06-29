@@ -1,6 +1,6 @@
 ---
-import Header from "@component/global/Header/Header.astro";
-import Footer from "@component/global/Footer/Footer.astro";
+import Header from "@component/global/Header/Header.astro"
+import Footer from "@component/global/Footer/Footer.astro"
 
 // Component imports
 import { SEO } from "astro-seo"
@@ -41,7 +41,7 @@ const {
 } = Astro.props as Props
 ---
 
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<!-- SEO. -->
 		<SEO
@@ -66,13 +66,19 @@ const {
 				}
 			}}
 			twitter={{
-				card: seoConfig.twitter.card
+				// card: seoConfig.twitter.card
 			}}
 		/>
 
 		<!-- Global meta tags. -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- Favicons. -->
 		<link
@@ -164,7 +170,7 @@ const {
 		<script is:inline src="/registerSW.js"></script>
 		<link rel="manifest" href="/manifest.webmanifest" />
 	</head>
-	<body class="min-h-screen flex flex-col w-full overflow-x-hidden">
+	<body class="flex flex-col w-full min-h-screen overflow-x-hidden font-montserrat bg-slate-50">
 		<Header />
 		<main class="flex flex-1 flex-col h-[100%] w-full">
 			<slot />
